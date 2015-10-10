@@ -41,8 +41,8 @@ else
   APT_OPTIONS="-o debug::nolocking=true -o dir::cache=$APT_CACHE_DIR -o dir::state=$APT_STATE_DIR"
 fi
 
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 48AD6246925553
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
+#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 48AD6246925553
+#apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7638D0442B90D010
 
 topic "Cleaning apt caches"
 apt-get $APT_OPTIONS clean | indent
